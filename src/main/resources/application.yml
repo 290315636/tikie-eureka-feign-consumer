@@ -2,7 +2,7 @@ server:
   port: 9001
 spring:
   application:
-    name: eureka-feign-client
+    name: eureka-feign-consumer
   output:
     ansi:
       enabled: ALWAYS   #控制台彩色输出
@@ -14,8 +14,8 @@ feign:
   hystrix:
     enabled: true
     
-#springboot2.0. 的配置项为：
-#actuator端口
+#断路器的管理面板（springboot2.0.* 的配置项为）：
+#actuator
 management:
   server:
     port: 9101
