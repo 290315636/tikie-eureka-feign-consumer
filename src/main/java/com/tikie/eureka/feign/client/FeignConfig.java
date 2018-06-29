@@ -16,7 +16,7 @@ import feign.Retryer;
 
 /**
  * @author zhaocs
- * 配置类
+ * 配置类，配置最大重试次数等
  */
 @Configuration
 public class FeignConfig {

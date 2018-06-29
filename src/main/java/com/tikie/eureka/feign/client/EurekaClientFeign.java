@@ -16,10 +16,11 @@ import com.tikie.eureka.feign.hystrix.HiHystrix;
 
 /**
  * @author zhaocs
- *
+ * feign服务接口，调用远程服务提供者的服务接口
+ * 可以使用统一的断路器处理熔断逻辑
  */
 @Component
-@FeignClient(value = "eureka-provider", configuration = FeignConfig.class,fallback = HiHystrix.class)
+@FeignClient(value = "eureka-provider", configuration = FeignConfig.class, fallback = HiHystrix.class)
 public interface EurekaClientFeign {
     @GetMapping(value = "/hi")
     String sayHiFromClientEureka(@RequestParam(value = "name")String name);
