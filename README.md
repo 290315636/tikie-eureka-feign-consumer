@@ -71,7 +71,7 @@ spring cloud全家桶，各个组件整合使用之feign服务消费者
     8. config-client配置中心用户 > https://github.com/290315636/tikie-eureka-config-client
     9. bus
     
-    注. 3、4可以选中其一,优先使用feign;5可以不用启动（使用时启动）
+    注. 3、4可以选中其一,优先使用feign;5可以不用启动（使用时启动）,8为测试配置使用，可以不启动，本项目在1.0.3已经使用了
 ### 历史更新
 
     1.0.2 更新配置从云端读取
